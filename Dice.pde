@@ -1,36 +1,33 @@
-void setup()
-{
-  size(290,290);
-  noLoop();
-}
-void draw()
-{
-  for(int y = 5; y <=55*5; y+=55)
-  {
-    for(int x = 5; x <= 55*5; x+=55)
-    {
-    rect(x, y, 55, 55, 7);
-    }
-  }
-}
 void mousePressed()
 {
   redraw();
 }
 class Die //models one single dice cube
 {
-  //variable declarations here
-  
+  int dx, dy;
   Die(int x, int y) //constructor
   {
-    //variable initializations here
+    dx = x;
+    dy = y;
   }
   void roll()
   {
-    //your code here
+    
+    
   }
   void show()
   {
-    //your code here
+    fill(255,255,255);
+    rect(dx, dy, 50,50,7);
+    int num = (int)(Math.random()*6)+1;
+    if (num == 1)
+    {
+      fill(0);
+      ellipse(dx+28,dy+28,9,9);
+    } else if (num == 2)
+    {
+      fill(0);
+      
+    
   }
-}
+  }
