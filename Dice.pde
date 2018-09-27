@@ -27,7 +27,17 @@ class Die //models one single dice cube
     } else if (num == 2)
     {
       fill(0);
+      ellipse(dx+41,dy+15,8,8);
+      ellipse(dx+15,dy+41,8,8);
+    } else if (num==3)
+    {
+      fill(0);
+      ellipse(dx+41,dy+15,8,8);
+      ellipse(dx+28,dy+28,8,8);
+      ellipse(dx=15,dy+41,8,8);
       
     
   }
   }
+}
+
