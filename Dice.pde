@@ -3,7 +3,7 @@ void setup(){
   size(700,700);
 }
 void draw(){
-  background(255,255,255);
+  background(0,255,0);
   int count = 0;
   for (int x=100;x<width-100;x=x+100) 
   {
